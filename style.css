@@ -1,7 +1,7 @@
 :root {
- --bg-light: #CBEEF3;
- --bg-dark: #38A3A5;
- --text-dark: #22557A;
+ --bg-light: #f8f9fa;
+ --bg-dark: #1c1c1c;
+ --text-dark: #111;
  --text-light: #f5f5f5;
  --transition: 0.4s ease;
 }
@@ -21,13 +21,28 @@ body {
  color: var(--text-light);
 }
 
-.navbar {
- border-bottom: 3px solid gold;
+.custom-navbar {
+ background: linear-gradient(135deg, #0066ff, #4a00e0);
+ height: 80px;
+}
+
+.navbar-brand {
+ font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+ font-size: 1.1rem;
+ margin-right: 15px;
+ transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+ color: gold !important;
 }
 
 .hero-image {
  position: relative;
- margin-top: 56px;
+ margin-top: 80px;
 }
 
 .hero-image img {
@@ -70,6 +85,23 @@ body {
 
 .content-section.show {
  display: block;
+}
+
+.explore-box {
+ background: linear-gradient(135deg, rgba(0, 123, 255, 0.9), rgba(102, 16, 242, 0.9));
+ backdrop-filter: blur(4px);
+ border-left: 8px solid gold;
+ box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.popup-section {
+ display: none;
+ margin-bottom: 2rem;
+}
+
+.popup-section.show {
+ display: block;
+ animation: fadeIn 0.4s ease-in-out;
 }
 
 footer {
