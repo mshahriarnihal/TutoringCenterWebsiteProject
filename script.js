@@ -35,3 +35,4 @@ document.getElementById("exploreBtn").addEventListener("click", () => {
 document.getElementById("popupToggle").addEventListener("click", () => {
  document.getElementById("popupContent").classList.toggle("show");
 });
+ 
