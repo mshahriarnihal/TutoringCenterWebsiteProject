@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <title>NYC Tutoring Hub</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+ <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+ <div class="container-fluid">
+  <a class="navbar-brand fw-bold" href="#">Tutoring NYC</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navMenu">
+   <ul class="navbar-nav ms-auto">
+    <li class="nav-item"><a class="nav-link" href="#" data-target="home">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#" data-target="about">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="#" data-target="contact">Contact</a></li>
+   </ul>
+   <div class="ms-3 d-flex align-items-center gap-2">
+    <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+    <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
+    <div class="form-check form-switch text-light ms-3">
+     <input class="form-check-input" type="checkbox" id="themeToggle">
+    </div>
+   </div>
+  </div>
+ </div>
+</nav>
+
+<header class="hero-image">
+ <img src="assets/header.webp" class="img-fluid w-100" alt="Header image">
+ <div class="hero-overlay text-center">
+  <h1 class="fw-bold text-white display-6">Bright beginnings start here — personalized tutoring for NYC students</h1>
+  <button class="btn btn-warning mt-3" id="exploreBtn">Explore How</button>
+ </div>
+</header>
+
+<main class="container py-5">
+ <section id="home" class="content-section show">
+  <div class="row text-center">
+   <div class="col-md-4 mb-4">
+    <img src="assets/elementary.jpg" class="student-img" alt="Elementary">
+    <h4 class="mt-2">Elementary Students</h4>
+    <ul class="text-start">
+     <li>Phonics</li>
+     <li>Vocabulary</li>
+     <li>Grammar</li>
+     <li>Basic Math Skills</li>
+     <li>Educational games & videos</li>
+     <li>Interactive quizzes & worksheets</li>
+     <li>Personalized learning paths</li>
+    </ul>
+   </div>
+   <div class="col-md-4 mb-4">
+    <img src="assets/ms.jpg" class="student-img" alt="Middle School">
+    <h4 class="mt-2">Middle School Students</h4>
+    <ul class="text-start">
+     <li>1-on-1 and group sessions</li>
+     <li>Homework help & test prep</li>
+     <li>Study skills & coaching</li>
+     <li>Support for IEPs, ELL learners</li>
+    </ul>
+   </div>
+   <div class="col-md-4 mb-4">
+    <img src="assets/hs.jpg" class="student-img" alt="High School">
+    <h4 class="mt-2">High School Students</h4>
+    <ul class="text-start">
+     <li>Homework help, AP/Regents prep</li>
+     <li>College essay support</li>
+     <li>SAT/ACT preparation</li>
+     <li>504 Plan, ELL accommodations</li>
+    </ul>
+   </div>
+  </div>
+ </section>
+
+ <section id="about" class="content-section">
+  <h2>About Our Approach</h2>
+  <p>We believe every student is unique. Our NYC tutors provide tailored support to foster growth, confidence, and real academic success.</p>
+ </section>
+
+ <section id="contact" class="content-section">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+   <div class="mb-3"><input type="text" class="form-control" placeholder="Your Name" required></div>
+   <div class="mb-3"><input type="email" class="form-control" placeholder="Email" required></div>
+   <div class="mb-3"><textarea class="form-control" rows="4" placeholder="Message" required></textarea></div>
+   <button type="submit" class="btn btn-primary">Send Message</button>
+  </form>
+ </section>
+</main>
+
+<footer class="text-center text-light py-4 bg-dark mt-5">
+ <p class="mb-0">© 2025 Tutoring NYC — Empowering the next generation, one student at a time.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
