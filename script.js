@@ -1,4 +1,4 @@
-// Theme toggle logic
+// Theme toggle
 const themeToggle = document.getElementById("themeToggle");
 const root = document.documentElement;
 const storedTheme = localStorage.getItem("theme") || "light";
@@ -11,7 +11,7 @@ themeToggle.addEventListener("change", () => {
  localStorage.setItem("theme", theme);
 });
 
-// Nav section switching
+// Nav links switching content
 const navLinks = document.querySelectorAll('[data-target]');
 const sections = document.querySelectorAll('.content-section');
 
@@ -25,8 +25,13 @@ navLinks.forEach(link => {
  });
 });
 
-// Explore button shows #about for now
+// Hero Explore Btn -> About
 document.getElementById("exploreBtn").addEventListener("click", () => {
  sections.forEach(sec => sec.classList.remove("show"));
  document.getElementById("about").classList.add("show");
+});
+
+// Pop-up toggle
+document.getElementById("popupToggle").addEventListener("click", () => {
+ document.getElementById("popupContent").classList.toggle("show");
 });
