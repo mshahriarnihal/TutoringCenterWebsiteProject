@@ -9,3 +9,9 @@ A group project at hackathon which covers building the front-end of a website fo
  </section> 
 
  
+<footer class="text-center text-light py-4 bg-dark mt-5">
+    <p class="mb-1">© 2025 Tutoring NYC — Empowering the next generation, one student at a time.</p>
+    <p class="mb-1">123 Learning Lane, Suite 100, New York, NY 10001</p>
+    <p class="mb-0">Email: info@tutoringnyc.com | Phone: (123) 456-7890</p>
+  </footer>
+  
